@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f3f0e6;
+  --bg-accent: #dcefe6;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --border: rgba(18, 44, 52, 0.08);
+  --text: #122c34;
+  --text-soft: #45636d;
+  --ring: rgba(214, 104, 83, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(214, 104, 83, 0.14), transparent 34%),
+    radial-gradient(circle at top right, rgba(31, 92, 74, 0.14), transparent 28%),
+    linear-gradient(180deg, var(--bg-accent) 0%, var(--bg) 32%, #fbfaf6 100%);
+  color: var(--text);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(18, 44, 52, 0.12);
+}
+
+.text-balance {
+  text-wrap: balance;
+}

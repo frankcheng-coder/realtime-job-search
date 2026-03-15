@@ -179,6 +179,16 @@ export const TARGET_COMPANIES: CompanyConfig[] = [
     careerUrl: "https://www.capitalonecareers.com/en",
   },
   {
+    company: "Wells Fargo",
+    sourceType: "custom",
+    careerUrl: "https://www.wellsfargojobs.com/en/jobs/",
+  },
+  {
+    company: "Bloomberg",
+    sourceType: "custom",
+    careerUrl: "https://careers.bloomberg.com/job/search",
+  },
+  {
     company: "Fannie Mae",
     sourceType: "workday",
     careerUrl: "https://fanniemae.wd1.myworkdayjobs.com/en-US/FannieMaeCareers",

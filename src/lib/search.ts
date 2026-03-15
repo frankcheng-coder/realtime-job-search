@@ -28,6 +28,8 @@ import { microStrategyAdapter } from "@/lib/adapters/custom/microstrategy";
 import { kpmgAdapter } from "@/lib/adapters/custom/kpmg";
 import { astraZenecaAdapter } from "@/lib/adapters/custom/astrazeneca";
 import { capitalOneAdapter } from "@/lib/adapters/custom/capitalOne";
+import { wellsFargoAdapter } from "@/lib/adapters/custom/wellsFargo";
+import { bloombergAdapter } from "@/lib/adapters/custom/bloomberg";
 import { createBrowserManager } from "@/lib/browser";
 import { TARGET_COMPANIES, TARGET_COMPANY_MAP } from "@/lib/companyConfig";
 import { dedupeJobs } from "@/lib/dedupe";
@@ -81,6 +83,8 @@ const customAdapters: Record<string, Adapter> = {
   KPMG: kpmgAdapter,
   AstraZeneca: astraZenecaAdapter,
   "Capital One": capitalOneAdapter,
+  "Wells Fargo": wellsFargoAdapter,
+  Bloomberg: bloombergAdapter,
 };
 
 function resolveAdapter(company: CompanyConfig, sourceType: SourceType) {

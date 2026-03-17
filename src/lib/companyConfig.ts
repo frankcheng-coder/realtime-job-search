@@ -19,11 +19,7 @@ export const TARGET_COMPANIES: CompanyConfig[] = [
     careerUrl: "https://www.accenture.com/us-en/careers/jobsearch",
     fallbackCareerUrl: "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
   },
-  {
-    company: "Guidehouse",
-    sourceType: "workday",
-    careerUrl: "https://guidehouse.wd1.myworkdayjobs.com/External",
-  },
+
   {
     company: "EY",
     aliases: ["Ernst & Young (EY)"],
@@ -93,14 +89,7 @@ export const TARGET_COMPANIES: CompanyConfig[] = [
     careerUrl: "https://gdit.wd5.myworkdayjobs.com/External_Career_Site",
     fallbackCareerUrl: "https://www.gdit.com/careers/search/",
   },
-  {
-    company: "Lockheed Martin",
-    sourceType: "custom",
-    fallbackSourceType: "brassring",
-    careerUrl: "https://www.lockheedmartinjobs.com/search-jobs",
-    fallbackCareerUrl:
-      "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25037&siteid=5014",
-  },
+
   {
     company: "Peraton",
     sourceType: "icims",

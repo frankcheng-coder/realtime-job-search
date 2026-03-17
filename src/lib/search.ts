@@ -15,7 +15,7 @@ import { mitreAdapter } from "@/lib/adapters/custom/mitre";
 import { saicAdapter } from "@/lib/adapters/custom/saic";
 import { caciAdapter } from "@/lib/adapters/custom/caci";
 import { hiltonAdapter } from "@/lib/adapters/custom/hilton";
-import { lockheedAdapter } from "@/lib/adapters/custom/lockheed";
+
 import { noblisAdapter } from "@/lib/adapters/custom/noblis";
 import { baeAdapter } from "@/lib/adapters/custom/bae";
 import { finraAdapter } from "@/lib/adapters/custom/finra";
@@ -70,7 +70,7 @@ const customAdapters: Record<string, Adapter> = {
   SAIC: saicAdapter,
   CACI: caciAdapter,
   Hilton: hiltonAdapter,
-  "Lockheed Martin": lockheedAdapter,
+
   Noblis: noblisAdapter,
   "BAE Systems": baeAdapter,
   FINRA: finraAdapter,

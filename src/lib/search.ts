@@ -11,8 +11,7 @@ import { accentureAdapter } from "@/lib/adapters/custom/accenture";
 import { eyAdapter } from "@/lib/adapters/custom/ey";
 import { deloitteAdapter } from "@/lib/adapters/custom/deloitte";
 import { cventAdapter } from "@/lib/adapters/custom/cvent";
-import { mitreAdapter } from "@/lib/adapters/custom/mitre";
-import { saicAdapter } from "@/lib/adapters/custom/saic";
+
 import { caciAdapter } from "@/lib/adapters/custom/caci";
 import { hiltonAdapter } from "@/lib/adapters/custom/hilton";
 
@@ -66,8 +65,7 @@ const customAdapters: Record<string, Adapter> = {
   EY: eyAdapter,
   Deloitte: deloitteAdapter,
   Cvent: cventAdapter,
-  MITRE: mitreAdapter,
-  SAIC: saicAdapter,
+
   CACI: caciAdapter,
   Hilton: hiltonAdapter,
 

@@ -61,40 +61,14 @@ export const TARGET_COMPANIES: CompanyConfig[] = [
     sourceType: "custom",
     careerUrl: "https://careers.cvent.com/jobs",
   },
-  {
-    company: "MITRE",
-    aliases: ["MITRE Corporation"],
-    sourceType: "custom",
-    careerUrl: "https://careers.mitre.org/",
-  },
-  {
-    company: "Leidos",
-    sourceType: "workday",
-    careerUrl: "https://leidos.wd5.myworkdayjobs.com/External",
-  },
-  {
-    company: "SAIC",
-    sourceType: "custom",
-    careerUrl: "https://jobs.saic.com/",
-  },
+
   {
     company: "CACI",
     sourceType: "custom",
     careerUrl: "https://searchcareers.caci.com/",
     fallbackCareerUrl: "https://searchcareers.caci.com/",
   },
-  {
-    company: "GDIT",
-    sourceType: "workday",
-    careerUrl: "https://gdit.wd5.myworkdayjobs.com/External_Career_Site",
-    fallbackCareerUrl: "https://www.gdit.com/careers/search/",
-  },
 
-  {
-    company: "Peraton",
-    sourceType: "icims",
-    careerUrl: "https://careers-peraton.icims.com/jobs/search",
-  },
   {
     company: "Noblis",
     sourceType: "custom",

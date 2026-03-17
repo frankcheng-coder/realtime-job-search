@@ -133,7 +133,7 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string) {
 
 function applyFilters(results: JobResult[], input: SearchRequest) {
   return results.filter((result) => {
-    if (result.postedAgeDays === null || result.postedAgeDays > input.postedWindowDays) {
+    if (result.postedAgeDays !== null && result.postedAgeDays > input.postedWindowDays) {
       return false;
     }
 

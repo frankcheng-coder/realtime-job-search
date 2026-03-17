@@ -9,7 +9,9 @@ import { TARGET_COMPANIES } from "@/lib/companyConfig";
 import { DEFAULT_METRO_KEY, METRO_PRESETS } from "@/lib/metroPresets";
 import type { SearchRequest, SearchResponse } from "@/lib/types";
 
-const ALL_COMPANIES = TARGET_COMPANIES.map((company) => company.company);
+const ALL_COMPANIES = TARGET_COMPANIES.map((company) => company.company).sort((left, right) =>
+  left.localeCompare(right),
+);
 
 export function SearchForm() {
   const [keywords, setKeywords] = useState("");

@@ -27,8 +27,11 @@ export const mitreAdapter: Adapter = async (context) => {
   const searchUrl = buildMitreSearchUrl(context.query.keywords);
   const jobs = await context.browser.withPage(async (page) => {
     await page.goto(searchUrl, {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: 8_000,
+    });
+    await page.waitForSelector('a[href*="/us/en/job/"]', {
+      timeout: 6_000,
     });
 
     const rawJobs = await page.locator('a[href*="/us/en/job/"]').evaluateAll((nodes) =>

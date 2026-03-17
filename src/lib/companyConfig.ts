@@ -144,7 +144,7 @@ export const TARGET_COMPANIES: CompanyConfig[] = [
   {
     company: "S&P Global",
     sourceType: "custom",
-    careerUrl: "https://www.spglobal.com/en/explore-s-p-global/careers",
+    careerUrl: "https://careers.spglobal.com/jobs",
   },
   {
     company: "World Bank Group",
@@ -186,7 +186,7 @@ export const TARGET_COMPANIES: CompanyConfig[] = [
   {
     company: "Bloomberg",
     sourceType: "custom",
-    careerUrl: "https://careers.bloomberg.com/job/search",
+    careerUrl: "https://bloomberg.avature.net/careers/SearchJobs",
   },
   {
     company: "Fannie Mae",

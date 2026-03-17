@@ -141,10 +141,6 @@ function applyFilters(results: JobResult[], input: SearchRequest) {
       return false;
     }
 
-    if (result.remoteType === "remote") {
-      return input.remoteType !== "onsite";
-    }
-
     return result.metroMatch;
   });
 }

@@ -43,7 +43,7 @@ async function fetchWithRetry(url: string, options?: RequestInit) {
       return await fetch(url, options);
     } catch (error) {
       lastError = error;
-      if (attempt === 1) {
+      if (attempt === 1 || (error instanceof Error && error.name === "AbortError")) {
         break;
       }
     }
